@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoración de Servicios - PentesterCR</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de Font Awesome para estrellas y redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Valora mi Trabajo</h1>
+            <p>Tu opinión es fundamental para seguir mejorando. Por favor, selecciona el servicio que deseas valorar.</p>
+        </header>
+
+        <!-- Pestañas de Navegación -->
+        <div class="tabs">
+            <button class="tab-link active" data-tab="diseno">Diseño</button>
+            <button class="tab-link" data-tab="ciberseguridad">Ciberseguridad y Desarrollo web</button>
+            <button class="tab-link" data-tab="analisis">Análisis de Datos</button>
+        </div>
+
+        <!-- Contenido de las Pestañas -->
+        <div class="tab-content">
+
+            <!-- Pestaña de Diseño -->
+            <div id="diseno" class="tab-pane active">
+                <h2>Cuestionario de Diseño</h2>
+                <form action="https://formspree.io/f/xdkzljro" method="POST">
+                    
+                    <div class="form-group">
+                        <label>Calidad del Entregable</label>
+                        <div class="rating-group">
+                            <input type="radio" id="diseno-q1-star5" name="Calidad (Diseño)" value="5 - Excelente" required><label for="diseno-q1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-q1-star4" name="Calidad (Diseño)" value="4 - Bueno"><label for="diseno-q1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-q1-star3" name="Calidad (Diseño)" value="3 - Regular"><label for="diseno-q1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-q1-star2" name="Calidad (Diseño)" value="2 - Malo"><label for="diseno-q1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-q1-star1" name="Calidad (Diseño)" value="1 - Muy Malo"><label for="diseno-q1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cumplimiento del Tiempo de Entrega</label>
+                        <div class="rating-group">
+                            <input type="radio" id="diseno-t1-star5" name="Tiempo de Entrega (Diseño)" value="5 - Excelente" required><label for="diseno-t1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-t1-star4" name="Tiempo de Entrega (Diseño)" value="4 - Bueno"><label for="diseno-t1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-t1-star3" name="Tiempo de Entrega (Diseño)" value="3 - Regular"><label for="diseno-t1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-t1-star2" name="Tiempo de Entrega (Diseño)" value="2 - Malo"><label for="diseno-t1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-t1-star1" name="Tiempo de Entrega (Diseño)" value="1 - Muy Malo"><label for="diseno-t1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Comunicación durante el Proyecto</label>
+                        <div class="rating-group">
+                            <input type="radio" id="diseno-c1-star5" name="Comunicación (Diseño)" value="5 - Excelente" required><label for="diseno-c1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-c1-star4" name="Comunicación (Diseño)" value="4 - Buena"><label for="diseno-c1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-c1-star3" name="Comunicación (Diseño)" value="3 - Regular"><label for="diseno-c1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-c1-star2" name="Comunicación (Diseño)" value="2 - Mala"><label for="diseno-c1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="diseno-c1-star1" name="Comunicación (Diseño)" value="1 - Muy Mala"><label for="diseno-c1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resena-diseno">Reseña General (Opcional)</label>
+                        <textarea id="resena-diseno" name="Reseña (Diseño)" rows="4" placeholder="Cuéntame más sobre tu experiencia..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="Servicio Valorado" value="Diseño">
+                    <input type="text" name="Nombre del Cliente" placeholder="Tu Nombre (Opcional)">
+                    <input type="email" name="Email del Cliente" placeholder="Tu Email (Para contactarte si es necesario)">
+
+                    <button type="submit">Enviar Valoración de Diseño</button>
+                </form>
+            </div>
+
+            <!-- Pestaña de Ciberseguridad -->
+            <div id="ciberseguridad" class="tab-pane">
+                <h2>Cuestionario de Ciberseguridad y Desarrollo web</h2>
+                <form action="https://formspree.io/f/xdkzljro" method="POST">
+                    
+                    <div class="form-group">
+                        <label>Efectividad de la Solución</label>
+                        <div class="rating-group">
+                            <input type="radio" id="ciber-q1-star5" name="Calidad (Ciberseguridad)" value="5 - Excelente" required><label for="ciber-q1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-q1-star4" name="Calidad (Ciberseguridad)" value="4 - Bueno"><label for="ciber-q1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-q1-star3" name="Calidad (Ciberseguridad)" value="3 - Regular"><label for="ciber-q1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-q1-star2" name="Calidad (Ciberseguridad)" value="2 - Malo"><label for="ciber-q1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-q1-star1" name="Calidad (Ciberseguridad)" value="1 - Muy Malo"><label for="ciber-q1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cumplimiento del Tiempo de Entrega</label>
+                        <div class="rating-group">
+                            <input type="radio" id="ciber-t1-star5" name="Tiempo de Entrega (Ciberseguridad)" value="5 - Excelente" required><label for="ciber-t1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-t1-star4" name="Tiempo de Entrega (Ciberseguridad)" value="4 - Bueno"><label for="ciber-t1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-t1-star3" name="Tiempo de Entrega (Ciberseguridad)" value="3 - Regular"><label for="ciber-t1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-t1-star2" name="Tiempo de Entrega (Ciberseguridad)" value="2 - Malo"><label for="ciber-t1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-t1-star1" name="Tiempo de Entrega (Ciberseguridad)" value="1 - Muy Malo"><label for="ciber-t1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Claridad en la Comunicación</label>
+                        <div class="rating-group">
+                            <input type="radio" id="ciber-c1-star5" name="Comunicación (Ciberseguridad)" value="5 - Excelente" required><label for="ciber-c1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-c1-star4" name="Comunicación (Ciberseguridad)" value="4 - Buena"><label for="ciber-c1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-c1-star3" name="Comunicación (Ciberseguridad)" value="3 - Regular"><label for="ciber-c1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-c1-star2" name="Comunicación (Ciberseguridad)" value="2 - Mala"><label for="ciber-c1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="ciber-c1-star1" name="Comunicación (Ciberseguridad)" value="1 - Muy Mala"><label for="ciber-c1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resena-ciber">Reseña General (Opcional)</label>
+                        <textarea id="resena-ciber" name="Reseña (Ciberseguridad)" rows="4" placeholder="Cuéntame más sobre tu experiencia..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="Servicio Valorado" value="Ciberseguridad">
+                    <input type="text" name="Nombre del Cliente" placeholder="Tu Nombre (Opcional)">
+                    <input type="email" name="Email del Cliente" placeholder="Tu Email (Para contactarte si es necesario)">
+                    
+                    <button type="submit">Enviar Valoración de Ciberseguridad</button>
+                </form>
+            </div>
+
+            <!-- Pestaña de Análisis de Datos -->
+            <div id="analisis" class="tab-pane">
+                <h2>Cuestionario de Análisis de Datos</h2>
+                <form action="https://formspree.io/f/xdkzljro" method="POST">
+                    
+                     <div class="form-group">
+                        <label>Precisión del Análisis</label>
+                        <div class="rating-group">
+                            <input type="radio" id="analisis-q1-star5" name="Calidad (Análisis)" value="5 - Excelente" required><label for="analisis-q1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-q1-star4" name="Calidad (Análisis)" value="4 - Bueno"><label for="analisis-q1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-q1-star3" name="Calidad (Análisis)" value="3 - Regular"><label for="analisis-q1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-q1-star2" name="Calidad (Análisis)" value="2 - Malo"><label for="analisis-q1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-q1-star1" name="Calidad (Análisis)" value="1 - Muy Malo"><label for="analisis-q1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cumplimiento del Tiempo de Entrega</label>
+                        <div class="rating-group">
+                            <input type="radio" id="analisis-t1-star5" name="Tiempo de Entrega (Análisis)" value="5 - Excelente" required><label for="analisis-t1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-t1-star4" name="Tiempo de Entrega (Análisis)" value="4 - Bueno"><label for="analisis-t1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-t1-star3" name="Tiempo de Entrega (Análisis)" value="3 - Regular"><label for="analisis-t1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-t1-star2" name="Tiempo de Entrega (Análisis)" value="2 - Malo"><label for="analisis-t1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-t1-star1" name="Tiempo de Entrega (Análisis)" value="1 - Muy Malo"><label for="analisis-t1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Claridad de los Reportes</label>
+                        <div class="rating-group">
+                            <input type="radio" id="analisis-c1-star5" name="Comunicación (Análisis)" value="5 - Excelente" required><label for="analisis-c1-star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-c1-star4" name="Comunicación (Análisis)" value="4 - Buena"><label for="analisis-c1-star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-c1-star3" name="Comunicación (Análisis)" value="3 - Regular"><label for="analisis-c1-star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-c1-star2" name="Comunicación (Análisis)" value="2 - Mala"><label for="analisis-c1-star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="analisis-c1-star1" name="Comunicación (Análisis)" value="1 - Muy Mala"><label for="analisis-c1-star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resena-analisis">Reseña General (Opcional)</label>
+                        <textarea id="resena-analisis" name="Reseña (Análisis)" rows="4" placeholder="Cuéntame más sobre tu experiencia..."></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="Servicio Valorado" value="Análisis de Datos">
+                    <input type="text" name="Nombre del Cliente" placeholder="Tu Nombre (Opcional)">
+                    <input type="email" name="Email del Cliente" placeholder="Tu Email (Para contactarte si es necesario)">
+                    
+                    <button type="submit">Enviar Valoración de Análisis</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- *** PIE DE PÁGINA CON TU MARCA Y ENLACES *** -->
+        <footer class="branding-footer">
+            <p>Un servicio de <strong>PentesterCR</strong></p>
+            <div class="social-links">
+                <a href="https://www.pentestercr.com/" target="_blank" title="Mi Sitio Web"><i class="fas fa-globe"></i></a>
+                <a href="https://www.linkedin.com/in/pentestercr/" target="_blank" title="Mi Perfil de LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
